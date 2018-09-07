@@ -45,16 +45,31 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Data Pipeline Project Fusion Byte Example</h1>
-        <p>This is the Fusion Byte of the Data Pipeline class. This
-        page should explain what question you want to answer and use
-        the visualization tools provided by Google Fusion Table to
-        answer it. </p>
+	<h1>Global Power Plant Distribution</h1>
+        <p>Questions: Where on earth are the power plants most densely distributed? Which area has the largest electrical power production capacity?</p>
+        <p>Power plant distribution (left) and heat map of eletrical power production capacity (right) are generated based on Global Power Plant Database provided by World Resources Institute.</p>
       </div>
 
+<div style="float:left;">
+    <div align="center">
+        <iframe width="500" height="300" scrolling="no" frameborder="no"
+	        src="https://fusiontables.google.com/embedviz?q=select+col5+from+1c7SWWsHnqZP2qPVol_3FEj7eA9PkpWKQ5GQSmdRt&amp;viz=MAP&amp;h=false&amp;lat=42.195573406692965&amp;lng=-95.61889822711669&amp;t=4&amp;z=4&amp;l=col5&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+        <p>Power Plant distribution (Small Green:0-20mw, Large Blue:20-500mw,</p>
+        <p>Large Yellow: 500-2000mw, Large Red: 2000-22500mw)</p>
+    </div>
+</div>
 
-<iframe width="500" height="300" scrolling="no" frameborder="no"
-	src="https://www.google.com/fusiontables/embedviz?q=select+col16%3E%3E0+from+1ymz3EtGdi4qKGMl5AxEFXtTlgk3tKi8iCpjTzvM&amp;viz=MAP&amp;h=false&amp;lat=38.071424981566125&amp;lng=-85.15232666015623&amp;t=1&amp;z=9&amp;l=col16%3E%3E0&amp;y=3&amp;tmplt=3&amp;hml=TWO_COL_LAT_LNG"></iframe>
+
+<div style="float:right;">
+    <div align = "center">
+        <iframe width="500" height="300" scrolling="no" frameborder="no" 
+            src="https://fusiontables.google.com/embedviz?q=select+col5%2C+col6%2C+col4+from+1c7SWWsHnqZP2qPVol_3FEj7eA9PkpWKQ5GQSmdRt+where+col4+%3E%3D+1300+and+col4+%3C%3D+22500+limit+1000&amp;viz=HEATMAP&amp;h=true&amp;lat=35.96837468245061&amp;lng=118.73077762555533&amp;t=1&amp;z=4&amp;l=col5&amp;y=3&amp;tmplt=4&amp;hmd=true&amp;hmg=%2366ff0000%2C%2393ff00ff%2C%23c1ff00ff%2C%23eeff00ff%2C%23f4e300ff%2C%23f4e300ff%2C%23f9c600ff%2C%23ffaa00ff%2C%23ff7100ff%2C%23ff3900ff%2C%23ff0000ff&amp;hmo=0.78&amp;hmr=33&amp;hmw=4&amp;hml=TWO_COL_LAT_LNG"></iframe>
+        <p>Electrical Power Production Capacity Heatmap</p>    
+    </div>
+</div>
+
+
+
 
       </div> <!-- /page-header -->
     </div> <!-- /container -->
